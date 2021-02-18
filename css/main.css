@@ -787,7 +787,10 @@
           flex-direction: column;
           min-width: 0;
           word-wrap: break-word;
-          background-image: url("../img/login.png");
+          background:linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.3)
+    ), url("../img/login.png");
           background-clip: border-box;
           border: 1px solid rgba(0, 0, 0, .125);
           border-radius: .25rem;
@@ -795,9 +798,8 @@
           width: 100%;
           background-repeat: no-repeat;
           background-attachment: inherit;
-          background-size: cover;
-          background-position: center;
-        }
+          background-size:auto;
+          background-position: center;   }
 
         .card-body-login {
           display: flex;
@@ -1782,3 +1784,6 @@
 .mini{
   margin-left: 15px;
 }
+
+
+
