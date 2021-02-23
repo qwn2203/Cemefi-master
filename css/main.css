@@ -1076,21 +1076,21 @@
         }
 
         .texto-footer1 {
-            top: 95px;
+            /*top: 95px;*/
             position: absolute;
             bottom: 10px;
             left: 5%;
         }
 
         .texto-footer2 {
-            top: 125px;
+            /* top: 125px; */
             position: absolute;
             bottom: 10px;
             left: 5%;
         }
 
         .texto-footer3 {
-            top: 155px;
+            /* top: 155px; */
             position: absolute;
             bottom: 10px;
             left: 5%;
