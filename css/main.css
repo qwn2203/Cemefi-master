@@ -1397,6 +1397,7 @@
 
         .bg-gris-claro {
             background-color: var(--gris);
+            border-radius: 30px;
         }
 
         /* Input search */
