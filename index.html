@@ -132,24 +132,23 @@
                                 <input type="text" class="form-control-busqueda-inicio" id="inputPassword4" placeholder="Edo., Alcaldía o Mpio.">
                             </div>
                             <div class="form-group col-lg-1 col-md-4 border-r">
-                                <label for="codePostal" class="font-weight-bold op-9 font-14">C.P</label>
+                                <label for="codePostal" class="font-weight-bold op-9 font-14">C.P.</label>
                                 <input type="text" class="form-control-busqueda-inicio" id="codePostal" placeholder="58140">
                             </div>
                             <div class="form-group col-lg-2 col-md-4 border-r">
-
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label font-10" for="defaultCheck1">
-                                        Forma parte de cemefi
+                                    <label class="form-check-label font-14 font-weight-bold op-9" for="defaultCheck1">
+                                        Es miembro de CEMEFI
                                     </label>
                                 </div>
-                                <div class="form-check mini">
+                                <div class="form-check mini hide" id="check">
                                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
                                     <label class="form-check-label font-10" for="defaultCheck2">
                                         Socio
                                     </label>
                                 </div>
-                                <div class="form-check mini">
+                                <div class="form-check mini hide" id="check1">
                                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
                                     <label class="form-check-label font-10" for="defaultCheck3">
                                         Asociado
@@ -158,10 +157,10 @@
                             </div>
                             <div class="form-group col-lg-2 col-md-4">
                                 <label for="inputPassword4" class="font-weight-bold op-9">Más criterios</label>
-                                <input type="text" class="form-control-busqueda-inicio" id="inputPassword4" placeholder="Búsqueda avanzada">
+                                <a id="abrirModal" type="button" class="btn btn-busqueda-av" data-toggle="modal" data-target="#exampleModal">Búsqueda avanzada</a>
                             </div>
                             <div class="contenedor-search">
-                                <a id="abrirModal" type="button" class="btn-search btn-search-blanco font-20" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-search"></i></a>
+                                <a type="button" href="" class="btn-search btn-search-blanco font-20"><i class="fas fa-search"></i></a>
                             </div>
                         </div>
                     </form>
@@ -203,13 +202,6 @@
                                                         <option></option>
                                                     </select>
                                                 </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
-                                                    <label for="" class="font-weight-bold op-9">Código
-                                                        postal</label>
-                                                    <input type="text" class="form-control-modal">
-                                                    <option></option>
-
-                                                </div>
                                             </div>
                                             <div class="form-row">
                                                 <div class="col-12 mt-4">
@@ -217,31 +209,6 @@
                                                 </div>
                                             </div>
                                             <div class="form-row separacion-50">
-                                                <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
-                                                    <div class="box-check">
-                                                        <input id="check1" type="checkbox" checked>
-                                                        <span class="check"></span>
-                                                        <label for="check1" class="op-9 font-15 font-weight-light ml-2">Es miembro
-                                                            de
-                                                            Cemefi</label>
-                                                    </div>
-                                                    <div>
-                                                        <div class="col-lg-4 col-md-6 col-sm-12 mt-4 ml-5">
-                                                            <div class="box-check">
-                                                                <input id="check2" type="checkbox">
-                                                                <span class="check"></span>
-                                                                <label for="check2" class="op-9 font-15 font-weight-light ml-2">Socio</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-6 col-sm-12 mt-4 ml-5">
-                                                            <div class="box-check">
-                                                                <input id="checkA" type="checkbox">
-                                                                <span class="check"></span>
-                                                                <label for="checkA" class="op-9 font-15 font-weight-light ml-2">Afiliado</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                                 <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
                                                     <div class="box-check">
                                                         <input id="check4" type="checkbox">
@@ -373,6 +340,7 @@
                     <p class="text-white texto-footer3">© Cemefi
                         <script>
                             document.write(new Date().getFullYear())
+
                         </script>
                     </p>
                 </div>
@@ -391,23 +359,12 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p class="text-justify">Entendemos por instituciones filantrópicas a aquellas organizaciones de
-                        beneficencia o ayuda a terceros que se caracterizan por estar legalmente constituidas, ser
-                        privadas y autogobernadas, que no distribuyen remanentes y no hacen
-                        proselitismo religioso ni partidista. Pueden dedicarse a cualquier causa siempre y cuando
-                        realicen actividades dentro de la ley. Entre sus funciones sociales, están el aporte de
-                        servicios a la comunidad, la promoción de la participación
-                        ciudadana, fungen como laboratorios sociales, promueven el cambio y actúan como contrapeso del
-                        poder.</p>
+                    <p class="text-justify">El Directorio de Instituciones Filantrópicas, nace en 1990, y constituye laherramienta más importante, confiable y completa que visibiliza los datosde las organizaciones de la sociedad civil en México.</p>
                     <p class="text-justify">
-                        De esta forma, el Directorio de Instituciones Filantrópicas, nace en 1990, para convertirse en
-                        la herramienta más importante, confiable y completa que visibiliza los datos de las
-                        organizaciones de la sociedad civil en México.
+                        Entendemos por instituciones filantrópicas a aquellas organizaciones debeneficencia o ayuda a terceros que se caracterizan por estar legalmenteconstituidas, ser privadas y autogobernadas, que no distribuyenremanentes y no hacen proselitismo religioso ni partidista. Puedendedicarse a cualquier causa siempre y cuando realicen actividades dentrode la ley. Entre sus funciones sociales, están el aporte de servicios a lacomunidad, la promoción de la participación ciudadana, fungen comolaboratorios sociales, promueven el cambio y actúan como contrapeso delpoder.
                     </p>
                     <p class="text-justify">
-                        La información que concentra es actualizada frecuentemente y permite promover el acercamiento de
-                        este sector con entidades donantes, empresas socialmente responsables, gobierno y otros públicos
-                        interesados en la labor social.
+                        De esta forma, la información que concentra el directorio es actualizadafrecuentemente y permite promover el acercamiento de este sector conentidades donantes, empresas socialmente responsables, gobierno y otros.
                     </p>
                 </div>
             </div>
@@ -420,9 +377,29 @@
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
 </script>
+<script>
+    $(document).ready(function() {
+        $('#defaultCheck1').click(function(event) {
+            if (this.checked) {
+                var element = document.getElementById("check");
+                element.classList.remove("hide");
+                var element1 = document.getElementById("check1");
+                element1.classList.remove("hide");
+            } else {
+                var element = document.getElementById("check");
+                element.classList.add("hide");
+                var element1 = document.getElementById("check1");
+                element1.classList.add("hide");
+            }
+        });
+    });
+
+</script>
 
 <!-- Menu Toggle Script -->
 <script src="./js/sidebar.js?ver=1.0.14"></script>
 
 <!-- Validar formularios -->
-<script src="./js/validarFormularios.js?ver=1.0.14"></script></html>
+<script src="./js/validarFormularios.js?ver=1.0.14"></script>
+
+</html>

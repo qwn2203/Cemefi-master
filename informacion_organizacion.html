@@ -124,11 +124,12 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 eliminar-p text-center">
                         <a class="btn btn-blanco-md btn-blanco-md-active sombra boder-none font-11 pointer"><span class=""><i class="fas fa-info-circle"></i> Datos generales</span></a>
                         <a class="btn btn-blanco-md sombra boder-none font-11  pointer"><span class=""><i class="fas fa-info-circle"></i> Perfil</span></a>
+                        <a class="btn btn-blanco-md sombra boder-none font-11  pointer"><span class=""><i class="fas fa-info-circle"></i> Estructura</span></a>
                         <a class="btn btn-blanco-md sombra boder-none font-11  pointer"><span class=""><i class="fas fa-info-circle"></i>
                                 Donataria</span></a>
                         <a class="btn btn-blanco-md sombra boder-none font-11  pointer"><span class=""><i class="fas fa-info-circle"></i>
                                 Cluni</span></a>
-                        <a class="btn btn-blanco-md sombra boder-none font-11  pointer"><span class=""><i class="fas fa-info-circle"></i> Estructura</span></a>
+
                         <a class="btn btn-blanco-md sombra boder-none font-11  pointer"><span class=""><i class="fas fa-info-circle"></i> Financiamiento</span></a>
                         <a class="btn btn-blanco-md sombra boder-none font-11  pointer"><span class=""><i class="fas fa-info-circle"></i>
                                 Vinculación</span></a>
@@ -148,6 +149,7 @@
                                 Actualización</span></a> -->
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 mt-5 text-right">
+
                         <a href=""><img class="img-fluid" src="./img/facebook.png" alt="logo facebook" width="45px"></a>
                         <a href=""><img class="img-fluid" src="./img/linkeding.png" alt="logo linkeding" width="45px"></a>
                         <a href=""><img class="img-fluid" src="./img/twitter.png" alt="logo twitter" width="45px"></a>
@@ -155,15 +157,15 @@
                     </div>
                 </div>
                 <div class="row mt-5 mt-md-3 mt-lg-3">
-                    <div class="col-lg-2 col-md-12 col-sm-12 centrar-sm animate__animated animate__fadeInLeft">
+                    <div class="col-lg-2 col-md-2 col-sm-2 centrar-sm animate__animated animate__fadeInLeft">
                         <h3>Banners</h3>
                     </div>
-                    <div class="col-lg-3 col-md-12 col-sm-12 centrar-sm animate__animated animate__fadeInLeft">
-                        <a href=""><img class="img-fluid img-org" src="./img/userImg.png" alt="logo bamx" width="65%"></a><br class="espacio-remover-sm espacio-remover-md">
-                        <a href=""><img class="img-fluid img-org mt-2" src="./img/info-org2.png" alt="logo bamx" width="65%"></a><br class="espacio-remover-sm">
-                        <a href=""><img class="img-fluid img-org mt-2" src="./img/info-org1.png" alt="logo bamx" width="65%"></a>
+                    <div class="col-lg-3 col-md-3 col-sm-4 centrar-sm animate__animated animate__fadeInLeft">
+                        <a href=""><img class="img-fluid img-org" src="./img/userImg.png" alt="logo bamx"></a><br class="espacio-remover-sm espacio-remover-md">
+                        <a href=""><img class="img-fluid img-org mt-2" src="./img/info-org2.png" alt="logo bamx"></a><br class="espacio-remover-sm">
+                        <a href=""><img class="img-fluid img-org mt-2" src="./img/info-org1.png" alt="logo bamx"></a>
                     </div>
-                    <div class="col-lg-7 animate__animated animate__fadeInRight forms-info bg-gris-claro">
+                    <div class="col-lg-7 col-md-7 col-sm-6 animate__animated animate__fadeInRight forms-info bg-gris-claro">
                         <form action="" class="form-inline" id="formsInfo1">
                             <div class="form-group-info">
                                 <label for="razonSocialF1"><span class="form-label-g font-weight-bold">Razón
@@ -244,9 +246,8 @@
                                 <input type="text" class="form-control-info bg-gris-claro w-60 ml-0 ml-md-2 ml-lg-2 w-sm" id="miembroCemefiF1" name="miembroCemefiF1" value="">
                             </div>
                         </form>
+
                         <form action="" class="form-inline ocultar" id="formsInfo2">
-                            <a class="btn btn-blanco-sm mt-2" id="acortarTexto" onclick="mostrarMenos()">Ver menos
-                                <i class="far fa-eye-slash ml-3"></i></a>
                             <div class="form-group-info">
                                 <label for="fechaConsF2"><span class="form-label-g font-weight-bold">Fecha de
                                         constitución:</span>
@@ -304,6 +305,9 @@
                                 </label>
                                 <input type="text" class="form-control-info bg-gris-claro w-60 ml-0 ml-md-2 ml-lg-2 w-sm" id="odsF2" name="odsF2" value="">
                             </div>
+                            <a class="mt-2" id="acortarTexto" onclick="mostrarMenos()">Ver menos
+                                <i class="far fa-eye-slash ml-3"></i>
+                            </a>
                         </form>
                         <form action="" class="form-inline ocultar" id="formsInfo3">
                             <!-- <div class="form-group-info">
@@ -320,7 +324,7 @@
                                 <input type="text" class="form-control-info bg-gris-claro w-60 ml-0 ml-md-2 ml-lg-2 w-sm" id="razonSocialSatF3" name="razonSocialSatF3" value="">
                             </div>
                             <div class="form-group-info">
-                                <label for="actividadF3"><span class="form-label-g font-weight-bold">Actividad o fin
+                                <label for="actividadF3"><span class="form-label-g font-weight-bold mb-5">Actividad o fin
                                         autorizado:</span>
                                 </label>
                                 <input type="text" class="form-control-info bg-gris-claro w-60 ml-0 ml-md-2 ml-lg-2 w-sm" id="actividadF3" name="actividadF3" value="">
@@ -354,31 +358,31 @@
                                 <input type="text" class="form-control-info bg-gris-claro w-60 ml-0 ml-md-2 ml-lg-2 w-sm" id="oscF4" name="oscF4" value="">
                             </div> -->
                             <div class="form-group-info">
-                                <label for="razonSocialF4"><span class="form-label-g font-weight-bold">Razón
+                                <label for="razonSocialF4"><span class="form-label-g font-weight-bold mb-5">Razón
                                         social:</span>
                                 </label>
                                 <input type="text" class="form-control-info bg-gris-claro w-60 ml-0 ml-md-2 ml-lg-2 w-sm" id="razonSocialF4" name="razonSocialF4" value="">
                             </div>
                             <div class="form-group-info">
-                                <label for="figuraJuridicaF4"><span class="form-label-g font-weight-bold">Figura
+                                <label for="figuraJuridicaF4"><span class="form-label-g font-weight-bold mb-5">Figura
                                         jurídica:</span>
                                 </label>
                                 <input type="text" class="form-control-info bg-gris-claro w-60 ml-0 ml-md-2 ml-lg-2 w-sm" id="figuraJuridicaF4" name="figuraJuridicaF4" value="">
                             </div>
                             <div class="form-group-info">
-                                <label for="nCluniF4"><span class="form-label-g font-weight-bold">N° de
+                                <label for="nCluniF4"><span class="form-label-g font-weight-bold mb-5">N° de
                                         Cluni:</span>
                                 </label>
                                 <input type="text" class="form-control-info bg-gris-claro w-60 ml-0 ml-md-2 ml-lg-2 w-sm" id="nCluniF4" name="nCluniF4" value="">
                             </div>
                             <div class="form-group-info">
-                                <label for="estatusCluniF4"><span class="form-label-g font-weight-bold">Estatus
+                                <label for="estatusCluniF4"><span class="form-label-g font-weight-bold mb-5">Estatus
                                         Cluni:</span>
                                 </label>
                                 <input type="text" class="form-control-info bg-gris-claro w-60 ml-0 ml-md-2 ml-lg-2 w-sm" id="estatusCluniF4" name="estatusCluniF4" value="">
                             </div>
                             <div class="form-group-info">
-                                <label for="actividadF4"><span class="form-label-g font-weight-bold">Actividad:</span>
+                                <label for="actividadF4"><span class="form-label-g font-weight-bold mb-5">Actividad:</span>
                                 </label>
                                 <input type="text" class="form-control-info bg-gris-claro w-60 ml-0 ml-md-2 ml-lg-2 w-sm" id="actividadF4" name="actividadF4" value="">
                             </div>
@@ -482,7 +486,7 @@
                                 <input type="text" class="form-control-info bg-gris-claro w-60 ml-0 ml-md-2 ml-lg-2 w-sm" id="porcentajesDeMasIngresosF6" name="porcentajesDeMasIngresosF6" value="">
                             </div>
                             <div class="form-group-info">
-                                <label for="gastoAnualF6"><span class="form-label-g font-weight-bold">Gasto promedio
+                                <label for="gastoAnualF6"><span class="form-label-g font-weight-bold mb-4">Gasto promedio
                                         anual *:</span>
                                 </label>
                                 <input type="text" class="form-control-info bg-gris-claro w-60 ml-0 ml-md-2 ml-lg-2 w-sm" id="gastoAnualF6" name="gastoAnualF6" value="">
@@ -581,7 +585,7 @@
                         </form>
                         <form action="" class="form-inline ocultar" id="formsInfo10">
                             <div class="form-group-info">
-                                <label for="servicioProporionaF10"><span class="form-label-g font-weight-bold">Servicio que
+                                <label for="servicioProporionaF10"><span class="form-label-g font-weight-bold mb-5">Servicio que
                                         proporciona:</span>
                                 </label>
                                 <input type="text" class="form-control-info bg-gris-claro w-60 ml-0 ml-md-2 ml-lg-2 w-sm" id="servicioProporionaF10" name="servicioProporionaF10" value="">
@@ -660,6 +664,23 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+</script>
+<script>
+    $(document).ready(function() {
+        $('#defaultCheck1').click(function(event) {
+            if (this.checked) {
+                var element = document.getElementById("check");
+                element.classList.remove("hide");
+                var element1 = document.getElementById("check1");
+                element1.classList.remove("hide");
+            } else {
+                var element = document.getElementById("check");
+                element.classList.add("hide");
+                var element1 = document.getElementById("check1");
+                element1.classList.add("hide");
+            }
+        });
+    });
 </script>
 
 <!-- Menu Toggle Script -->
