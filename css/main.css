@@ -15,6 +15,7 @@
         html {
             box-sizing: border-box;
             height: 100%;
+
         }
 
         *,
@@ -32,6 +33,12 @@
             position: inherit;
             bottom: 0;
             width: 100%;
+            background: url(../img/olas-naranjas.png) center center;
+            background-repeat: no-repeat;
+            background-size:cover;
+            height: 300px;
+            color: white;
+
         }
 
         .nav-link {
@@ -1676,9 +1683,7 @@
                 margin-top: 50px !important;
             }
 
-            footer {
-                position: inherit;
-            }
+
 
             .separacion-50 {
                 padding: 0px;
